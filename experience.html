@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Experience</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* BODY BACKGROUND ANIMATION */
+
+body{
+
+background:linear-gradient(270deg,
+#ff0000,
+#ff9900,
+#00ff00,
+#00ffff,
+#0000ff,
+#ff00ff,
+#ff0000);
+
+background-size:1200% 1200%;
+
+animation:bgMove 15s infinite;
+
+color:white;
+
+min-height:100vh;
+
+display:flex;
+flex-direction:column;
+
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* NAVBAR */
+
+nav{
+background:black;
+padding:15px;
+}
+
+nav ul{
+list-style:none;
+text-align:center;
+}
+
+nav ul li{
+display:inline;
+margin:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#00ffff;
+}
+
+/* SECTION */
+
+section{
+padding:50px;
+text-align:center;
+}
+
+/* TITLE */
+
+h1{
+
+font-size:50px;
+
+margin-bottom:40px;
+
+background:linear-gradient(90deg,#00ffff,#00ff00,#ff00ff);
+-webkit-background-clip:text;
+color:transparent;
+
+}
+
+/* CARDS */
+
+.card{
+
+width:70%;
+
+margin:25px auto;
+
+padding:30px;
+
+border-radius:20px;
+
+background:rgba(0,0,0,0.7);
+
+border:3px solid white;
+
+box-shadow:0 0 20px rgba(255,255,255,0.5);
+
+transition:0.4s;
+
+}
+
+/* HOVER */
+
+.card:hover{
+
+transform:translateY(-8px) scale(1.03);
+
+box-shadow:0 0 35px #00ffff;
+
+border-color:#00ffff;
+
+}
+
+/* CARD TITLE */
+
+.card h2{
+
+font-size:30px;
+
+margin-bottom:10px;
+
+background:linear-gradient(90deg,#ff0000,#00ffff,#00ff00);
+-webkit-background-clip:text;
+color:transparent;
+
+}
+
+/* TEXT */
+
+.card p{
+
+font-size:20px;
+
+line-height:1.6;
+
+color:#ddd;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:black;
+
+text-align:center;
+
+padding:15px;
+
+margin-top:auto;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="qualification.html">Qualifications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="personal.html">Personal Info</a></li>
+
+<li><a href="experience.html">Experience</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h1>My Experience</h1>
+
+<div class="card">
+
+<h2>Internship </h2>
+
+<p>
+1 year Internship Training in National Stock Exchange of India. National
+Stock Exchange of India Limited Ludhiana
+</p>
+</div>
+
+<div class="card">
+
+<h2>Apprenticeship & Internship </h2>
+
+<p>
+Completed Apprenticeship training in Full Stack Java Development  
+and worked on real-time web applications.
+
+<P>6 Month Internship as Java Developer at B.T.P.S Technologies Pvt Ltd, Kanpur.  
+Worked on Java Swing and Web Development projects.</P>
+</p>
+
+</div>
+
+<div class="card">
+
+<h2> SUMMER TRAINING </h2>
+
+<p>
+6 Weeks Summer Training in B. T. P. S. Kanpur
+</p>
+
+</div>
+
+
+
+
+<DIV>
+
+
+</DIV>
+
+<div class="card">
+
+<h2>Professional Experience</h2>
+
+<p>
+1+ Year experience as Full Stack Java Developer.  
+Completed 20+ frontend projects and 10+ full-stack projects.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Satyanshu Saxena
+</footer>
+<script src="chat.js"></script>
+</body>
+</html>

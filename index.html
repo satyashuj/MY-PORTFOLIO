@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Satyanshu Portfolio</title>
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+background:#000;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+nav h1{
+font-size:32px;
+font-weight:bold;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00ffff;
+}
+
+/* HERO SECTION */
+.hero{
+height:90vh;
+
+/* animated gradient */
+background:linear-gradient(270deg,
+#ff0000,
+#ff9900,
+#00cc00,
+#0066ff,
+#cc00ff,
+#00ffff,
+#ff0066);
+
+background-size:1000% 100%;
+animation:heroBG 15s infinite;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 100px;
+
+color:white;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes heroBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* LEFT SIDE */
+.hero-left{
+max-width:500px;
+}
+
+.hero-left h2{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero-left p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+
+background:#00d9d9;
+color:black;
+
+padding:12px 25px;
+
+font-size:18px;
+font-weight:bold;
+
+border-radius:6px;
+
+text-decoration:none;
+
+animation:colorChange 6s infinite;
+
+transition:0.3s;
+}
+
+/* BUTTON ANIMATION */
+@keyframes colorChange{
+
+0%{background:#00d9d9;}
+20%{background:#ff0000;}
+40%{background:#ff9900;}
+60%{background:#00cc00;}
+80%{background:#0066ff;}
+100%{background:#e26dff;}
+
+}
+
+/* HOVER */
+.btn:hover{
+transform:scale(1.08);
+background:#58cf0d;
+color:black;
+}
+
+/* CLICK */
+.btn:active{
+transform:scale(0.95);
+background:red;
+color:white;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-right img{
+
+width:320px;
+height:320px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+box-shadow:0 0 25px rgba(0,0,0,0.5);
+
+transition:0.4s;
+}
+
+/* IMAGE HOVER */
+.hero-right img:hover{
+transform:scale(1.05);
+box-shadow:0 0 35px rgba(0,0,0,0.8);
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+
+<h1>Satyanshu</h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="qualification.html">Qualifications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="personal.html">Personal Info</a></li>
+
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+<div class="hero-left">
+
+<h2>Hello, I'm Satyanshu</h2>
+<p>
+  I am a Full Stack JAVA developer. Currently, I am working at B.T.P.S. Technologies Pvt. Ltd. Kanpur as a Web Developer.
+</p>
+
+<p>Java Developer | Web Developer</p>
+
+<a href="resume.pdf" download class="btn">
+Download Resume
+</a>
+
+</div>
+
+<div class="hero-right">
+
+<img src="SATYANSHU.jpg" alt="profile photo">
+
+</div>
+
+</section>
+<script src="chat.js"></script>
+
+</body>
+</html>

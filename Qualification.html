@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Qualification</title>
+<style>
+
+/* BODY BACKGROUND ANIMATION */
+body{
+margin:0;
+font-family:Arial;
+min-height:100vh;
+
+background:linear-gradient(270deg,
+#ff0000,
+#ff9900,
+#00cc00,
+#0066ff,
+#cc00ff,
+#00ffff,
+#ff0066);
+
+background-size:1000% 1000%;
+animation:bgMove 20s infinite;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+nav{
+background:black;
+padding:15px;
+}
+
+nav ul{
+list-style:none;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline;
+margin:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:cyan;
+}
+
+/* SECTION */
+section{
+text-align:center;
+padding:40px;
+color:white;
+}
+
+h1{
+font-size:45px;
+margin-bottom:30px;
+}
+
+/* QUALIFICATION BOX */
+.qual-box{
+
+width:60%;
+margin:20px auto;
+padding:20px;
+font-size:22px;
+border-radius:10px;
+cursor:pointer;
+
+background:linear-gradient(270deg,#ff0000,#ff9900,#00cc00,#0066ff,#cc00ff);
+background-size:800% 800%;
+animation:boxMove 10s infinite;
+
+transition:0.4s;
+box-shadow:0 0 15px black;
+}
+
+@keyframes boxMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* HOVER */
+.qual-box:hover{
+background:linear-gradient(90deg,#00ffff,#00ff99);
+color:black;
+transform:scale(1.1);
+animation:none;
+}
+
+/* CLICK */
+.qual-box:active{
+background:black;
+color:white;
+}
+
+/* FOOTER */
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="Qualification.html">Qualifications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="personal.html">Personal Info</a></li>
+
+<li><a href="experience.html">Experience</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h1>My Qualification</h1>
+
+<div class="qual-box" onclick="changeColor(this)">
+<H2>HIGH_SCHOOL - 10TH </H2><br>
+School: CH V S BH V INTER COLLEGE AURAIYA UTTAR PRADESH<br>
+Board- UP BOARD<br>
+
+Year: 2015<br>
+Percentage: 70%
+</div>
+
+<div class="qual-box" onclick="changeColor(this)">
+<H2>Intermediate - 12TH</H2><br>
+School: S T N G S I C JANPUR KANPUR DEHAT UTTAR PRADESH<br>
+Board- UP BOARD<br>
+
+Year: 2017<br>
+Percentage: 49%
+</div>
+
+<div class="qual-box" onclick="changeColor(this)">
+  <H2>Graduation</H2>
+<br>
+College: Pt. Kundanlal Shukla Mahavidyalaya RANIA KANPUR DEHAT UTTAR PRADESH<br>
+<br>
+University- CSJM UNIVERSITY KANPUR <br>
+
+Course: Bachelor of Science (B.Sc.)<br>
+Year: 2022<br>
+Percentage: 65%
+</div>
+
+<div class="qual-box" onclick="changeColor(this)">
+<H2>Diploma</H2><br>
+College: GOVERNMENT POLYTECHNIC UNNAO<br>
+Board- BTEUP BOARD<br>
+Course: POST GRADUATION DIPLOMA IN COMPUTER APPLICATION <br>
+Year: 2025<br>
+Percentage: 70%
+</div>
+
+</section>
+
+<footer>
+© 2026 Satyanshu Saxena
+</footer>
+
+<script>
+
+/* CLICK PAR RANDOM COLOR */
+function changeColor(element){
+
+var colors=[
+"#ff0000",
+"#00ff00",
+"#0000ff",
+"#ff00ff",
+"#00ffff",
+"#ffff00"
+];
+
+var random=colors[Math.floor(Math.random()*colors.length)];
+
+element.style.background=random;
+element.style.color="white";
+
+}
+
+</script>
+<script src="chat.js"></script>
+
+</body>
+</html>

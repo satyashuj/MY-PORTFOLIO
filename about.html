@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>About</title>
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* BODY BACKGROUND */
+body{
+margin:0;
+font-family:Arial;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+
+background:linear-gradient(270deg,
+#ff6a00,
+#ee0979,
+#00c6ff,
+#0072ff,
+#00ff99,
+#ff00cc);
+
+background-size:1000% 1000%;
+animation:bgMove 20s infinite;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+nav{
+background:black;
+padding:15px;
+}
+
+nav ul{
+list-style:none;
+text-align:center;
+}
+
+nav ul li{
+display:inline;
+margin:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:cyan;
+}
+
+/* SECTION */
+section{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+color:white;
+padding:40px;
+}
+
+/* HEADING */
+h1{
+font-size:50px;
+margin-bottom:20px;
+animation:textGlow 3s infinite alternate;
+}
+
+@keyframes textGlow{
+from{color:white;}
+to{color:cyan;}
+}
+
+p{
+font-size:20px;
+width:70%;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+/* SOFT SKILLS */
+.soft-title{
+margin-top:40px;
+font-size:35px;
+}
+
+.soft-skills{
+
+margin-top:20px;
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+
+gap:30px;
+
+font-size:26px;
+
+color:red;
+}
+
+.soft-skills input{
+transform:scale(1.5);
+margin-right:10px;
+cursor:pointer;
+}
+
+.soft-skills label:hover{
+color:cyan;
+transform:scale(1.1);
+transition:0.3s;
+}
+
+/* SOCIAL MEDIA */
+.social{
+margin-top:40px;
+display:flex;
+gap:30px;
+}
+
+/* ICON STYLE */
+.icon{
+width:60px;
+height:60px;
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:28px;
+color:white;
+
+border-radius:50%;
+text-decoration:none;
+
+background:linear-gradient(270deg,
+#ff0000,
+#ff9900,
+#00ff00,
+#00ffff,
+#0000ff,
+#00d9ff,
+#ff0088,
+#ff00ff);
+
+background-size:600% 600%;
+animation:iconMove 6s infinite;
+
+transition:0.4s;
+}
+
+@keyframes iconMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.icon:hover{
+transform:scale(1.2);
+color:black;
+background:white;
+}
+
+/* FOOTER */
+.footer{
+
+background:black;
+color:white;
+
+display:flex;
+justify-content:space-between;
+
+padding:20px 60px;
+
+font-size:26px;
+
+flex-wrap:wrap;
+
+}
+.red{
+color:#ff3b3b;
+font-weight:bold;
+}
+
+.blue{
+color:#37ff00d6;
+font-weight:bold;
+}
+
+.white{
+color:white;
+font-weight:bold;
+}
+
+/* blue highlight name */
+
+.name{
+
+color:#00d9ff;
+font-weight:bold;
+
+}
+
+/* responsive */
+
+@media(max-width:800px){
+
+.footer{
+flex-direction:column;
+text-align:center;
+gap:10px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="qualification.html">Qualifications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="personal.html">Personal Info</a></li>
+
+<li><a href="experience.html">Experience</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section>
+
+<h1>About Me</h1>
+
+<p>Hello! I'm <span class="red">SATYANSHU SAXENA</span>, a passionate<span class="red"> Full Stack JAVA Developer</span> with expertise in both frontend and backend technologies. I specialize in creating dynamic and responsive web applications using the PHP framwork laravel. With a strong foundation in HTML, CSS, JavaScript, and various frameworks, I'm dedicated to delivering high-quality code and seamless user experiences. Whether it's building robust backend systems or crafting engaging user interfaces, I thrive on turning ideas into reality.</p>
+
+<p><span class="blue">
+I am computer engineer skilled in Java, JSP, Servlet , Spring MVC and Web Development.
+I build desktop and web applications with modern technologies.</span>
+</p>
+
+<p>
+My journey in the tech world began with an intense focus on web development, where I honed my skills through various training and internships. I started with a <span class="red">45-day UI training at B.T.P.S. Technologies Pvt Ltd. Kanpur</span>,
+where I was honored with a "Star Performance Award" for my dedication and skills. Following that, I completed a <span class="blue">2-month summer training in School Management System at B.T.P.S. Technologies Pvt Ltd. Kanpur </span>where I received the "Best Performance Award" for my contributions.
+</p>,
+
+
+<P>I am currently working as a<span class="blue"> Full Stack JAVA Developer at B.T.P.S. Technologies Pvt Ltd. Kanpur</span>, where I have gained hands-on experience in PHP development. During my job, I successfully completed over 20 frontend projects and more than 10 full-stack projects for clients, showcasing my ability to deliver high-quality, scalable solutions. I have also completed <span class="blue">6-month internships from B.T.P.S. Technologies Pvt Ltd. Kanpur</span>. I have also<span class="red"> 1+ yearexperience as a JAVA Developer at B.T.P.S. Technologies Pvt Ltd. Kanpur</span> .</P>
+
+
+
+<!-- SOFT SKILLS -->
+<h2 class="soft-title">My Soft Skills</h2>
+
+<div class="soft-skills">
+
+<label><input type="checkbox">Team Work</label>
+
+<label><input type="checkbox">Fast Learner</label>
+
+<label><input type="checkbox">Time Management</label>
+
+<label><input type="checkbox">Smart Work</label>
+
+<label><input type="checkbox">Problem Solver</label>
+
+</div>
+
+<!-- SOCIAL MEDIA -->
+<div class="social">
+
+<a href="https://www.linkedin.com/in/satyanshu-saxena-183219338/" target="_blank" class="icon">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+<a href="https://facebook.com" target="_blank" class="icon">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://instagram.com" target="_blank" class="icon">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://github.com/satyashuj" target="_blank" class="icon">
+<i class="fab fa-github"></i>
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="footer-left">
+Copyright © 2026 <span class="name">SATYANSHU SAXENA</span>. 
+All Rights Reserved.
+</div>
+
+<div class="footer-right">
+Design By : <span class="name">SATYANSHU SAXENA</span> 👋
+</div>
+
+</footer>
+<script src="chat.js"></script>
+
+</body>
+</html>

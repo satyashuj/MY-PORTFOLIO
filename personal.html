@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Information</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* BODY BACKGROUND ANIMATION */
+body{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+
+background:linear-gradient(270deg,
+#ff0000,
+#ff9900,
+#00ff00,
+#00ffff,
+#0000ff,
+#ff00ff,
+#ff0000);
+
+background-size:1200% 1200%;
+animation:bgMove 15s infinite;
+
+color:white;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+nav{
+background:black;
+padding:15px;
+}
+
+nav ul{
+list-style:none;
+text-align:center;
+}
+
+nav ul li{
+display:inline;
+margin:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#00ffff;
+}
+
+/* SECTION */
+section{
+padding:50px;
+text-align:center;
+}
+
+/* TITLE */
+h1{
+font-size:50px;
+margin-bottom:40px;
+
+background:linear-gradient(90deg,#00ffff,#00ff00,#ff00ff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+/* GRID */
+.info-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+/* CARD */
+.info-card{
+width:260px;
+padding:25px;
+
+background:rgba(0,0,0,0.7);
+
+border-radius:20px;
+
+border:3px solid white;
+
+box-shadow:0 0 20px rgba(255,255,255,0.5);
+
+transition:0.4s;
+}
+
+/* HOVER */
+.info-card:hover{
+transform:translateY(-8px) scale(1.05);
+box-shadow:0 0 35px #00ffff;
+border-color:#00ffff;
+}
+
+/* TITLE */
+.info-card h3{
+margin-bottom:10px;
+color:#00ffff;
+}
+
+/* TEXT */
+.info-card p{
+font-size:18px;
+color:#ddd;
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:15px;
+margin-top:auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="qualification.html">Qualifications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="personal.html">Personal Info</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h1>Personal Information</h1>
+
+<div class="info-container">
+
+<div class="info-card">
+<h3>Date of Birth</h3>
+<p>16 - 04 - 2001</p>
+</div>
+
+<div class="info-card">
+<h3>Nationality</h3>
+<p>Indian</p>
+</div>
+
+<div class="info-card">
+<h3>Gender</h3>
+<p>Male</p>
+</div>
+
+<div class="info-card">
+<h3>Hobbies</h3>
+<p>Computer Work</p>
+</div>
+
+<div class="info-card">
+<h3>Languages</h3>
+<p>Hindi, English</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Satyanshu Saxena
+</footer>
+<script src="chat.js"></script>
+
+</body>
+</html>

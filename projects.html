@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects</title>
+<style>
+
+/* BODY */
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(270deg,#ff6a00,#ee0979,#00c6ff,#0072ff);
+background-size:800% 800%;
+animation:bgMove 15s infinite;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+nav{
+background:black;
+padding:15px;
+}
+
+nav ul{
+list-style:none;
+text-align:center;
+}
+
+nav ul li{
+display:inline;
+margin:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:cyan;
+}
+
+/* SECTION */
+section{
+padding:50px;
+text-align:center;
+color:white;
+}
+
+h1{
+font-size:40px;
+margin-bottom:40px;
+}
+
+/* PROJECT CARD */
+.project{
+width:80%;
+margin:20px auto;
+padding:25px;
+border-radius:10px;
+font-size:20px;
+color:white;
+cursor:pointer;
+transition:0.4s;
+
+/* multicolor animation */
+background:linear-gradient(270deg,#ff0000,#ff9900,#00cc00,#0066ff,#cc00ff);
+background-size:800% 800%;
+animation:cardColor 8s infinite;
+
+box-shadow:0 0 15px black;
+}
+
+@keyframes cardColor{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* HOVER */
+.project-btn{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 12px;
+    background:#007BFF;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.project-btn:hover{
+    background:#0056b3;
+}
+
+/* CLICK */
+.project:active{
+background:black;
+color:white;
+}
+
+/* FOOTER */
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+position:fixed;
+bottom:0;
+width:100%;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="Qualification.html">Qualifications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="personal.html">Personal Info</a></li>
+
+<li><a href="experience.html">Experience</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h1>My Projects</h1>
+<div class="project" onclick="changeColor(this)">
+    <h3>
+        <a href="https://satyashuj.github.io/school-management-system/" target="_blank">
+            School Management System
+        </a>
+    </h3>
+    <p>HTML, CSS, JavaScript</p>
+    <a class="project-btn" href="https://yourlink.com/school-management" target="_blank">
+        View Project
+    </a>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+    <h3>
+        <a href=" https://satyashuj.github.io/Beauty-Parlour/" target="_blank">
+            Beauty Parler Management System
+        </a>
+    </h3>
+    <p>HTML, CSS, JavaScript</p>
+    <a class="project-btn" href=" https://satyashuj.github.io/Beauty-Parlour/" target="_blank">
+        View Project
+    </a>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+    <h3>
+        <a href="https://satyashuj.github.io/nse-/" target="_blank">
+            NSE Clone Management System
+        </a>
+    </h3>
+    <p>HTML, CSS, JavaScript</p>
+    <a class="project-btn" href="https://satyashuj.github.io/NSE-DEMO/" target="_blank">
+        View Project
+    </a>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+    <h3>
+        <a href="https://satyashuj.github.io/university-management-system/" target="_blank">
+            University Management System
+        </a>
+    </h3>
+    <p>HTML, CSS, JavaScript</p>
+    <a class="project-btn" href="https://satyashuj.github.io/university-management-system/" target="_blank">
+        View Project
+    </a>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+    <h3>
+        <a href=" https://satyashuj.github.io/Train-Management-System/" target="_blank">
+            Train Management System
+        </a>
+    </h3>
+    <p>HTML, CSS, JavaScript</p>
+    <a class="project-btn" href="  https://satyashuj.github.io/Train-Management-System/" target="_blank">
+        View Project
+    </a>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+    <h3>
+        <a href=" https://satyashuj.github.io/Kisan-Smart-Portal/" target="_blank">
+           Kisan-Smart-Portal
+        </a>
+    </h3>
+    <p>HTML, CSS, JavaScript</p>
+    <a class="project-btn" href=" https://satyashuj.github.io/Kisan-Smart-Portal/" target="_blank">
+        View Project
+    </a>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+    <h3>
+        <a href=" https://satyashuj.github.io/HTMLQUIZ/" target="_blank">
+HTMLQUIZ
+
+        </a>
+    </h3>
+    <p>HTML, CSS, JavaScript</p>
+    <a class="project-btn" href="https://satyashuj.github.io/HTMLQUIZ/" target="_blank">
+        View Project
+    </a>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+<h3>ATM System</h3>
+<p>Java Swing based ATM</p>
+</div>
+
+<div class="project" onclick="changeColor(this)">
+<h3>Hospital Management System</h3>
+<p>Java Swing based Hospital Management System</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Satyanshu Saxena
+</footer>
+
+<script>
+
+/* CLICK PAR RANDOM COLOR CHANGE */
+function changeColor(element){
+
+var colors = [
+"#ff0000",
+"#00ff00",
+"#0000ff",
+"#ff00ff",
+"#00ffff",
+"#ffff00",
+"#ff8800"
+];
+
+var random = colors[Math.floor(Math.random()*colors.length)];
+
+element.style.background = random;
+element.style.color = "white";
+
+}
+
+</script>
+<script src="chat.js"></script>
+
+</body>
+</html>
